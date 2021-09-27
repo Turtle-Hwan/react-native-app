@@ -8,9 +8,9 @@ export default function Login({navigation, route}) {
       <Button
         title="로그인"
         onPress={() => {
-          navigation.navigate(
-            'Home',
-          ); /*console.log(navigation); console.log(route);*/
+          navigation.navigate('bottomTab');
+          //navigation.navigate('Home');
+          /*console.log(navigation); console.log(route);*/
         }}
       />
       <Button title="회원가입" onPress={() => navigation.navigate('signup')} />

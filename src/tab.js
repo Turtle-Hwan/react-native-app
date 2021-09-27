@@ -20,10 +20,9 @@ const Tab = () => {
         },
         headerTitleAlign: 'center',
       }}>
-      <Stack.Screen name="Btab" component={bottomTab} />
       <Stack.Screen name="login" component={login} />
       <Stack.Screen name="signup" component={signup} />
-      
+      <Stack.Screen name="bottomTab" component={bottomTab} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Feed" component={Feed} />
     </Stack.Navigator>
