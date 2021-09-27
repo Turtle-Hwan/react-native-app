@@ -5,8 +5,15 @@ export default function Login({navigation, route}) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Login Page</Text>
-      <Button title="로그인" />
-      <Button title="회원가입" />
+      <Button
+        title="로그인"
+        onPress={() => {
+          navigation.navigate(
+            'Home',
+          ); /*console.log(navigation); console.log(route);*/
+        }}
+      />
+      <Button title="회원가입" onPress={() => navigation.navigate('signup')} />
     </View>
   );
 }
